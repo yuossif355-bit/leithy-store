@@ -1,1 +1,999 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SEO الأساسي -->
+    <title>الليثي ستور | Leithy Store - شحن PUBG Mobile و Free Fire</title>
+
+    <meta name="description" content="الليثي ستور - متجر شحن ألعاب موثوق لشحن PUBG Mobile وFree Fire في مصر. شحن UC وشحن جواهر فري فاير بالـID، أسعار مميزة ودعم سريع.">
+
+    <meta name="keywords" content="الليثي ستور, Leithy Store, الليثي, متجر الليثي, شحن ببجي, شحن PUBG, شحن PUBG Mobile, شحن UC, شدات ببجي, شحن فري فاير, جواهر فري فاير, شحن ألعاب, متجر شحن مصر">
+
+    <meta name="author" content="Leithy Store">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="language" content="Arabic">
+    <meta name="geo.region" content="EG">
+    <meta name="theme-color" content="#0d1117">
+
+    <!-- رابط الموقع الرسمي -->
+    <link rel="canonical" href="https://yuossif355-bit.github.io/leithy-store/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yuossif355-bit.github.io/leithy-store/">
+    <meta property="og:title" content="الليثي ستور | Leithy Store">
+    <meta property="og:description" content="متجر الليثي لشحن PUBG Mobile وFree Fire في مصر. شحن UC وجواهر بالـID ودعم سريع.">
+    <meta property="og:site_name" content="الليثي ستور | Leithy Store">
+    <meta property="og:locale" content="ar_EG">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="الليثي ستور | Leithy Store">
+    <meta name="twitter:description" content="شحن PUBG Mobile وFree Fire بالـID من الليثي ستور.">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- بيانات منظمة لجوجل -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "الليثي ستور",
+        "alternateName": "Leithy Store",
+        "url": "https://yuossif355-bit.github.io/leithy-store/",
+        "description": "الليثي ستور لشحن PUBG Mobile وFree Fire في مصر.",
+        "inLanguage": "ar-EG"
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: rgba(22, 27, 34, 0.85);
+            --accent-pubg: #ff9900;
+            --accent-ff: #00e5ff;
+            --text-color: #f0f6fc;
+            --text-muted: #8b949e;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image:
+                radial-gradient(at 0% 0%, rgba(255, 153, 0, 0.12) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(0, 229, 255, 0.12) 0px, transparent 50%);
+            color: var(--text-color);
+            font-family: 'Tajawal', sans-serif;
+            min-height: 100vh;
+            padding-bottom: 40px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px 10px;
+        }
+
+        .brand-title {
+            font-size: 2.8em;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ff9900 0%, #00e5ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+
+        .brand-subtitle {
+            color: var(--text-muted);
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .badge-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 700;
+            color: var(--text-color);
+            backdrop-filter: blur(5px);
+        }
+
+        .share-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+
+        .share-btn:hover {
+            background: rgba(255, 153, 0, 0.2);
+            border-color: var(--accent-pubg);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 30px;
+        }
+
+        .game-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        .game-card.pubg {
+            border-top: 4px solid var(--accent-pubg);
+        }
+
+        .game-card.ff {
+            border-top: 4px solid var(--accent-ff);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+        }
+
+        .card-title {
+            font-size: 1.7em;
+            font-weight: 900;
+        }
+
+        .pubg .card-title {
+            color: var(--accent-pubg);
+        }
+
+        .ff .card-title {
+            color: var(--accent-ff);
+        }
+
+        .price-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 10px 14px;
+            border-radius: 12px;
+            transition: background 0.2s;
+        }
+
+        .price-item:hover {
+            background: rgba(255, 255, 255, 0.07);
+        }
+
+        .item-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .item-name {
+            font-weight: 700;
+            font-size: 0.95em;
+        }
+
+        .item-price {
+            font-weight: 900;
+            font-size: 1.05em;
+        }
+
+        .pubg .item-price {
+            color: var(--accent-pubg);
+        }
+
+        .ff .item-price {
+            color: var(--accent-ff);
+        }
+
+        .btn-item-order {
+            padding: 6px 14px;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 800;
+            font-size: 0.85em;
+            cursor: pointer;
+            transition: transform 0.2s, filter 0.2s;
+        }
+
+        .pubg .btn-item-order {
+            background: var(--accent-pubg);
+            color: #000;
+        }
+
+        .ff .btn-item-order {
+            background: var(--accent-ff);
+            color: #000;
+        }
+
+        .btn-item-order:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(8px);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            padding: 20px;
+        }
+
+        .modal-card {
+            background: #161b22;
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            width: 100%;
+            max-width: 420px;
+            padding: 25px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+            position: relative;
+            animation: modalFadeIn 0.3s ease;
+        }
+
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .modal-title {
+            font-size: 1.4em;
+            font-weight: 900;
+            color: #fff;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.9em;
+            margin-bottom: 6px;
+            color: var(--text-muted);
+            font-weight: 700;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            color: #fff;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1em;
+            outline: none;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--accent-pubg);
+        }
+
+        .form-group input[readonly] {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--accent-ff);
+            font-weight: 700;
+        }
+
+        .btn-submit-order {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #ff9900 0%, #00e5ff 100%);
+            color: #000;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1.1em;
+            font-weight: 900;
+            cursor: pointer;
+            transition: filter 0.2s;
+            margin-top: 10px;
+        }
+
+        .btn-submit-order:hover {
+            filter: brightness(1.2);
+        }
+
+        .reviews-section {
+            max-width: 800px;
+            margin: 50px auto 0;
+            padding: 0 20px;
+        }
+
+        .reviews-header {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.5em;
+        }
+
+        .review-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .review-card {
+            background: rgba(255, 255, 255, 0.02);
+            border-right: 4px solid var(--accent-pubg);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .reviewer-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+        }
+
+        .reviewer-name {
+            font-weight: 700;
+        }
+
+        .review-stars {
+            color: #ffc107;
+        }
+
+        .review-text {
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--text-muted);
+            font-size: 0.85em;
+        }
+
+        @media (max-width: 700px) {
+            .brand-title {
+                font-size: 2em;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+                padding: 0 12px;
+            }
+
+            .game-card {
+                padding: 18px;
+            }
+
+            .price-item {
+                gap: 10px;
+            }
+
+            .btn-item-order {
+                white-space: nowrap;
+                padding: 7px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="brand-title">👑 الليثي ستور 👑</h1>
+
+        <p class="brand-subtitle">
+            الليثي ستور | Leithy Store - شحن PUBG Mobile وFree Fire في مصر
+        </p>
+
+        <div class="trust-badges">
+            <span class="badge-item">⚡ تسليم فوري</span>
+            <span class="badge-item">🛡️ شحن آمن بالـ ID</span>
+            <span class="badge-item">💬 دعم فني سريع</span>
+        </div>
+
+        <button class="share-btn" onclick="copySiteLink()">
+            🔗 مشاركة رابط المتجر
+        </button>
+    </header>
+
+    <main>
+
+        <section class="container" aria-label="أسعار شحن الألعاب">
+
+            <!-- PUBG -->
+            <article class="game-card pubg">
+
+                <div class="card-header">
+                    <h2 class="card-title">🎮 PUBG Mobile</h2>
+                    <span style="font-size:0.8em;color:var(--text-muted);">
+                        شحن ID
+                    </span>
+                </div>
+
+                <ul class="price-list">
+
+                    <li class="price-item">
+                        <div class="item-info">
+                            <span class="item-name">60 شدة (UC)</span>
+                            <span class="item-price">60 ج.م</span>
+                        </div>
+                        <button class="btn-item-order"
+                            onclick="openOrderModal('PUBG Mobile','60 شدة (UC)','60 ج.م')">
+                            اطلب الآن 🚀
+                        </button>
+                    </li>
+
+                    <li class="price-item">
+                        <div class="item-info">
+                            <span class="item-name">325 شدة (UC 25+300)</span>
+                            <span class="item-price">259 ج.م</span>
+                        </div>
+                        <button class="btn-item-order"
+                            onclick="openOrderModal('PUBG Mobile','325 شدة (UC 25+300)','259 ج.م')">
+                            اطلب الآن 🚀
+                        </button>
+                    </li>
+
+                    <li class="price-item">
+                        <div class="item-info">
+                            <span class="item-name">660 شدة (UC 60+600)</span>
+                            <span class="item-price">508 ج.م</span>
+                        </div>
+                        <button class="btn-item-order"
+                            onclick="openOrderModal('PUBG Mobile','660 شدة (UC 60+600)','508 ج.م')">
+                            اطلب الآن 🚀
+                        </button>
+                    </li>
+
+                    <li class="price-item">
+                        <div class="item-info">
+                            <span class="item-name">1800 شدة (UC 300+1500)</span>
+                            <span class="item-price">1254 ج.م</span>
+                        </div>
+                        <button class="btn-item-order"
+                            onclick="openOrderModal('PUBG Mobile','1800 شدة (UC 300+1500)','1254 ج.م')">
+                            اطلب الآن 🚀
+                        </button>
+                    </li>
+
+                    <li class="price-item">
+                        <div class="item-info">
+                            <span class="item-name">3850 شدة (UC 850+3000)</span>
+                            <span class="item-price">2499 ج.م</span>
+                        </div>
+                        <button class="btn-item-order"
+                            onclick="openOrderModal('PUBG Mobile','3850 شدة (UC 850+3000)','2499 ج.م')">
+                            اطلب الآن 🚀
+                        </button>
+                    </li>
+
+                    <li class="price-item">
+                        <div class="item-info">
+                            <span class="item-name">8100 شدة (UC 2100+6000)</span>
+                            <span class="item-price">4988 ج.م</span>
+                        </div>
+                        <button class="btn-item-order"
+                            onclick="openOrderModal('PUBG Mobile','8100 شدة (UC 2100+6000)','4988 ج.م')">
+                            اطلب الآن 🚀
+                        </button>
+                    </li>
+
+                    <li class="price-item">
+                        <div class="item-info">
+                            <span class="item-name">16200 شدة (UC 4200+12000)</span>
+                            <span class="item-price">9966 ج.م</span>
+                        </div>
+                        <button class="btn-item-order"
+                            onclick="openOrderModal('PUBG Mobile','16200 شدة (UC 4200+12000)','9966 ج.م')">
+                            اطلب الآن 🚀
+                        </button>
+                    </li>
+
+                </ul>
+            </article>
+
+            <!-- Free Fire -->
+            <article class="game-card ff">
+
+                <div class="card-header">
+                    <h2 class="card-title">🔥 Free Fire</h2>
+                    <span style="font-size:0.8em;color:var(--text-muted);">
+                        شحن ID
+                    </span>
+                </div>
+
+                <ul class="price-list">
+
+                    <li class="price-item">
+                        <div class="item-info">
+                            <span class="item-name">100 جوهرة 💎</span>
+                            <span class="item-price">65 ج.م</span>
+                        </div>
+                        <button class="btn-item-order"
+                            onclick="openOrderModal('Free Fire','100 جوهرة 💎','65 ج.م')">
+                            اطلب الآن 🚀
+                        </button>
+                    </li>
+
+                    <li class="price-item">
+                        <div class="item-info">
+                            <span class="item-name">210 جوهرة 💎</span>
+                            <span class="item-price">120 ج.م</span>
+                        </div>
+                        <button class="btn-item-order"
+                            onclick="openOrderModal('Free Fire','210 جوهرة 💎','120 ج.م')">
+                            اطلب الآن 🚀
+                        </button>
+                    </li>
+
+                    <li class="price-item">
+                        <div class="item-info">
+                            <span class="item-name">530 جوهرة 💎</span>
+                            <span class="item-price">285 ج.م</span>
+                        </div>
+                        <button class="btn-item-order"
+                            onclick="openOrderModal('Free Fire','530 جوهرة 💎','285 ج.م')">
+                            اطلب الآن 🚀
+                        </button>
+                    </li>
+
+                    <li class="price-item">
+                        <div class="item-info">
+                            <span class="item-name">1080 جوهرة 💎</span>
+                            <span class="item-price">560 ج.م</span>
+                        </div>
+                        <button class="btn-item-order"
+                            onclick="openOrderModal('Free Fire','1080 جوهرة 💎','560 ج.م')">
+                            اطلب الآن 🚀
+                        </button>
+                    </li>
+
+                    <li class="price-item">
+                        <div class="item-info">
+                            <span class="item-name">2200 جوهرة 💎</span>
+                            <span class="item-price">1110 ج.م</span>
+                        </div>
+                        <button class="btn-item-order"
+                            onclick="openOrderModal('Free Fire','2200 جوهرة 💎','1110 ج.م')">
+                            اطلب الآن 🚀
+                        </button>
+                    </li>
+
+                </ul>
+            </article>
+
+        </section>
+
+        <!-- معلومات إضافية لمحركات البحث -->
+        <section style="max-width:900px;margin:40px auto;padding:0 20px;text-align:center;">
+            <h2 style="margin-bottom:15px;">
+                الليثي ستور | Leithy Store
+            </h2>
+
+            <p style="color:var(--text-muted);line-height:2;">
+                الليثي ستور هو متجر إلكتروني لشحن الألعاب في مصر،
+                متخصص في شحن شدات PUBG Mobile وUC وجواهر Free Fire
+                باستخدام الـID، مع خدمة طلب سهلة ودعم سريع.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="orderModal">
+
+        <div class="modal-card">
+
+            <div class="modal-header">
+                <h3 class="modal-title">
+                    📥 تأكيد طلب الشحن
+                </h3>
+
+                <button class="modal-close" onclick="closeOrderModal()">
+                    &times;
+                </button>
+            </div>
+
+            <div class="form-group">
+                <label>اللعبة والباقة المختارة:</label>
+                <input type="text" id="modalSelectedPackage" readonly>
+            </div>
+
+            <div class="form-group">
+                <label>الـ ID الخاص بك باللعبة:</label>
+                <input type="text" id="modalPlayerID" placeholder="مثال: 5123456789">
+            </div>
+
+            <div class="form-group">
+                <label>رقم التواصل:</label>
+                <input type="tel" id="modalContactNumber" placeholder="مثال: 01012345678">
+            </div>
+
+            <button class="btn-submit-order" onclick="submitTelegramOrder()">
+                تأكيد وإرسال الطلب 🚀
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Reviews -->
+    <section class="reviews-section">
+
+        <h2 class="reviews-header">
+            ⭐ آراء وتقييمات العملاء ⭐
+        </h2>
+
+        <div class="review-box">
+
+            <div class="form-group">
+                <input type="text" id="userName" placeholder="اسمك الكريم...">
+            </div>
+
+            <div class="form-group">
+                <select id="userRating">
+                    <option value="⭐⭐⭐⭐⭐">
+                        ⭐⭐⭐⭐⭐ (خدمة ممتازة وسريعة)
+                    </option>
+
+                    <option value="⭐⭐⭐⭐">
+                        ⭐⭐⭐⭐ (جيدة جداً)
+                    </option>
+
+                    <option value="⭐⭐⭐">
+                        ⭐⭐⭐ (مقبولة)
+                    </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <textarea id="userComment" rows="3"
+                    placeholder="اكتب رأيك وتجربتك معنا..."></textarea>
+            </div>
+
+            <button class="btn-submit-order"
+                style="background:rgba(255,255,255,0.1);color:#fff;"
+                onclick="addReview()">
+                نشر التقييم
+            </button>
+
+        </div>
+
+        <div id="reviewsList"></div>
+
+    </section>
+
+    <footer class="footer">
+        جميع الحقوق محفوظة © 2026 - الليثي ستور (Leithy Store)
+    </footer>
+
+    <script>
+
+        /*
+        ==================================================
+        مهم:
+        لا تضع BOT TOKEN الحقيقي داخل موقع عام.
+        غيّر التوكن القديم من BotFather.
+        ==================================================
+        */
+
+        const BOT_TOKEN = "PUT_YOUR_NEW_BOT_TOKEN_HERE";
+        const CHAT_ID = "8683647907";
+
+        let currentSelectedGame = "";
+        let currentSelectedPackage = "";
+        let currentSelectedPrice = "";
+
+        function copySiteLink() {
+
+            navigator.clipboard.writeText(window.location.href)
+                .then(() => {
+                    alert("تم نسخ رابط المتجر بنجاح! 🚀");
+                })
+                .catch(() => {
+                    alert("رابط المتجر: " + window.location.href);
+                });
+        }
+
+        function openOrderModal(game, packageName, price) {
+
+            currentSelectedGame = game;
+            currentSelectedPackage = packageName;
+            currentSelectedPrice = price;
+
+            document.getElementById("modalSelectedPackage").value =
+                `${game} - ${packageName} (${price})`;
+
+            document.getElementById("modalPlayerID").value = "";
+            document.getElementById("modalContactNumber").value = "";
+
+            document.getElementById("orderModal").style.display = "flex";
+        }
+
+        function closeOrderModal() {
+            document.getElementById("orderModal").style.display = "none";
+        }
+
+        function submitTelegramOrder() {
+
+            const playerID =
+                document.getElementById("modalPlayerID").value.trim();
+
+            const contactNumber =
+                document.getElementById("modalContactNumber").value.trim();
+
+            if (!playerID || !contactNumber) {
+
+                alert("يرجى كتابة الـ ID ورقم التواصل بشكل صحيح!");
+                return;
+            }
+
+            if (
+                !BOT_TOKEN ||
+                BOT_TOKEN === "PUT_YOUR_NEW_BOT_TOKEN_HERE"
+            ) {
+                alert("لم يتم إعداد نظام الطلبات بعد.");
+                return;
+            }
+
+            const message =
+`👑 طلب شحن جديد - الليثي ستور
+
+🎮 اللعبة: ${currentSelectedGame}
+💎 العرض: ${currentSelectedPackage}
+💰 السعر: ${currentSelectedPrice}
+🆔 الـ ID: ${playerID}
+📞 رقم التواصل: ${contactNumber}
+⏰ الوقت: ${new Date().toLocaleString("ar-EG")}`;
+
+            fetch(
+                `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        chat_id: CHAT_ID,
+                        text: message
+                    })
+                }
+            )
+            .then(res => res.json())
+            .then(data => {
+
+                if (data.ok) {
+
+                    alert(
+                        "تم استلام طلبك بنجاح! 🚀"
+                    );
+
+                    closeOrderModal();
+
+                } else {
+
+                    alert(
+                        "حدث خطأ في إرسال الطلب."
+                    );
+                }
+            })
+            .catch(() => {
+
+                alert(
+                    "حدث خطأ في الاتصال."
+                );
+            });
+        }
+
+        function loadReviews() {
+
+            let savedReviews =
+                JSON.parse(
+                    localStorage.getItem("leithyReviews")
+                );
+
+            if (!savedReviews) {
+
+                savedReviews = [
+                    {
+                        name: "محمود علي",
+                        rating: "⭐⭐⭐⭐⭐",
+                        comment:
+                            "شحن سريع جداً والشدات وصلت في أقل من 5 دقائق، شكراً الليثي!"
+                    },
+                    {
+                        name: "أحمد سيد",
+                        rating: "⭐⭐⭐⭐⭐",
+                        comment:
+                            "أفضل متجر شحن في مصر، أسعار ممتازة وتعامل راقي."
+                    }
+                ];
+            }
+
+            const reviewsList =
+                document.getElementById("reviewsList");
+
+            reviewsList.innerHTML = "";
+
+            savedReviews.forEach(rev => {
+
+                const card =
+                    document.createElement("div");
+
+                card.className = "review-card";
+
+                const info =
+                    document.createElement("div");
+
+                info.className = "reviewer-info";
+
+                const name =
+                    document.createElement("span");
+
+                name.className = "reviewer-name";
+                name.textContent = rev.name;
+
+                const stars =
+                    document.createElement("span");
+
+                stars.className = "review-stars";
+                stars.textContent = rev.rating;
+
+                info.appendChild(name);
+                info.appendChild(stars);
+
+                const text =
+                    document.createElement("p");
+
+                text.className = "review-text";
+                text.textContent = rev.comment;
+
+                card.appendChild(info);
+                card.appendChild(text);
+
+                reviewsList.appendChild(card);
+            });
+        }
+
+        function addReview() {
+
+            const name =
+                document.getElementById("userName")
+                .value.trim();
+
+            const rating =
+                document.getElementById("userRating")
+                .value;
+
+            const comment =
+                document.getElementById("userComment")
+                .value.trim();
+
+            if (!name || !comment) {
+
+                alert(
+                    "يرجى كتابة الاسم والتقييم قبل النشر!"
+                );
+
+                return;
+            }
+
+            let savedReviews =
+                JSON.parse(
+                    localStorage.getItem("leithyReviews")
+                ) || [];
+
+            savedReviews.unshift({
+                name,
+                rating,
+                comment
+            });
+
+            localStorage.setItem(
+                "leithyReviews",
+                JSON.stringify(savedReviews)
+            );
+
+            loadReviews();
+
+            document.getElementById("userName").value = "";
+            document.getElementById("userComment").value = "";
+
+            alert(
+                "تم نشر تقييمك بنجاح! شكرًا لك 👑"
+            );
+        }
+
+        document.getElementById("orderModal")
+            .addEventListener("click", function(e) {
+
+                if (e.target === this) {
+                    closeOrderModal();
+                }
+
+            });
+
+        window.onload = loadReviews;
+
+    </script>
+
+</body>
+</html>
